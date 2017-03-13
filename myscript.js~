@@ -1,0 +1,58 @@
+function bulbOn()
+{
+document.getElementById('myImage').src='pic_bulbon.gif';
+document.getElementById('demo').style.fontSize='35px';
+}
+
+
+function bulbOff()
+{
+document.getElementById('myImage').src='pic_bulboff.gif'; src='pic_bulbon.gif';
+document.getElementById('demo').style.fontSize='16px';
+}
+
+
+//creates a listener for when you press a key
+window.onkeyup = keyup;
+
+//creates a global Javascript variable
+var inputTextValue;
+
+function keyup(e) {
+  //setting your input text to the global Javascript Variable for every key press
+  inputTextValue = e.target.value;
+
+  //listens for you to press the ENTER key, at which point your web address will change to the one you have input in the search box
+  if (e.keyCode == 13) {
+    window.location = "http://www.myurl.com/search/" + inputTextValue;
+
+
+
+
+function dec2bin() {
+var x = document.getElementById("deci").value;
+if ((/[^0-9]/g.test(x)) || x == "") {
+alert ("You must enter an integer decimal number!");
+document.getElementById("deci").value = "";
+document.getElementById("deci").focus();
+return false;
+}
+x = parseInt(x);
+var bin = x.toString(2);
+var hex = x.toString(16).toUpperCase();
+var octal = x.toString(8);
+
+
+var figs = "The binary representation of " + x + " is " + bin + "<br>";
+figs = figs + "The hexadecimal representation of " + x + " is " + hex + "<br>";
+figs = figs + "The octal representation of " + x + " is " + octal + "<br>";
+
+document.getElementById("result").innerHTML = figs;
+}
+</script>
+
+<p align="center"><font face="arial" size="-2">This free script provided by</font><br>
+<font face="arial, helvetica" size="-2"><a href="http://javascriptkit.com">JavaScript
+Kit</a></font></p>
+}
+

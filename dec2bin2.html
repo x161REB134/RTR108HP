@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>Decimal to Binary Converter</title>
+</head>
+<body>
+<h1>Convert between decimal and binary</h1>
+<p>This is meant to convert unsigned base 2 numbers to base 10 and back again.  The maximum number this app can handle is 2^64/2.  Hopefully you don't need to worry about anything larger than that.  This is written in JavaScript. </p>
+
+<form method="post">
+	<p>
+	<label for="numDecimal">Decimal</label>
+	<input name="numDecimal" type="text" size="25">
+	</p>
+	<p>
+	<label for="numBinary">Binary</label>
+	<input name="numBinary" type="text" size="25">
+	</p>
+	<p>
+	<button name="buttDecimalToBinary" type="button" onclick="this.form.numBinary.value = DecimalToBinary(this.form.numDecimal.value);">
+		Decimal To Binary
+	</button>
+	<button name="buttBinaryToDecimal" type="button" onclick="this.form.numDecimal.value = BinaryToDecimal(this.form.numBinary.value);">
+		Binary To Decimal
+	</button>
+	</p>
+</form>
+
+<script type="text/javascript" src="dec2bin2.js"> </script>
+</body>
+</html>
